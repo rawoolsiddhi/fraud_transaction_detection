@@ -1,5 +1,13 @@
+-e .
+
 pandas
 numpy
+scikit-learn
+xgboost
+imbalanced-learn
+joblib
 matplotlib
 seaborn
--e .
+jupyter
+notebook
+streamlit

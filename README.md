@@ -1,5 +1,3 @@
-# fraud_transaction_detection
-
 # 🕵️ Fraud Transaction Detection
 
 This is an end-to-end machine learning project to detect fraudulent financial transactions using a stacking ensemble model (Random Forest + XGBoost). It includes preprocessing, modeling, evaluation, prediction, and a user-friendly Streamlit web app.

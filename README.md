@@ -22,11 +22,8 @@ This is an end-to-end machine learning project to detect fraudulent financial tr
 - **Logistic Regression**
 - Combined using `StackingClassifier` from scikit-learn
 
----
 
 
-
----
 
 ## 🧪 How to Run
 

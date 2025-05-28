@@ -2,7 +2,7 @@
 
 This is an end-to-end machine learning project to detect fraudulent financial transactions using a stacking ensemble model (Random Forest + XGBoost). It includes preprocessing, modeling, evaluation, prediction, and a user-friendly Streamlit web app.
 
----
+
 
 ## 🚀 Features
 
@@ -13,7 +13,7 @@ This is an end-to-end machine learning project to detect fraudulent financial tr
 - Logging of all predictions to `logs/`
 - Web-based fraud detection via Streamlit interface
 
----
+
 
 ## 🧠 Algorithms Used
 

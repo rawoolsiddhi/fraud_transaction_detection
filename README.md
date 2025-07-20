@@ -65,7 +65,7 @@ The model is trained on a large-scale simulated fraud dataset with balanced clas
 MIT License
 
 
-Made  by Siddhi Rawool
+--by Siddhi Rawool
 
 Feel free to connect on LinkedIn
 https://www.linkedin.com/in/siddhi-rawool-783059248/

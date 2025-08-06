@@ -97,8 +97,10 @@ fraud_transaction_detection/
 | XGBoost | 0.881 ± 0.017 | 0.963 ± 0.007 | 0.763 ± 0.035 | 0.851 ± 0.023 |
 | KNN | 0.705 ± 0.037 | 0.942 ± 0.022 | 0.409 ± 0.074 | 0.568 ± 0.073 |
 | SVM | 0.595 ± 0.013 | 1.000 ± 0.000 | 0.190 ± 0.026 | 0.319 ± 0.037 |
-### Requirements
 
+**Performance**  
+- XGBoost: Accuracy ~96%, Precision ~92%, AUC ~0.76  
+- Model validated using 5‑fold cross‑validation
 
 ##  Performance Metrics
 
@@ -146,7 +148,8 @@ The diagram shows how your transaction data is organized:
   - TERMINAL: Terminal identification
   - TRANSACTION: Core transaction details and fraud information
 
-
+Fraud Transaction Detection  
+Simulated dataset (~1.8M transactions, ~0.8% fraud) generated using real‑world distribution patterns.
 
 Here are your data attributes in table format:
 
@@ -165,6 +168,7 @@ Here are your data attributes in table format:
 | TX_FRAUD | Fraud status indicator | Boolean | Fraud detection training | Core target variable |
 | TX_FRAUD_SCENARIO | Fraud type categorization | String | Fraud pattern analysis | Strategy development |
 
+### Requirements
 ```bash
 pip install -r requirements.txt
 ```
@@ -212,8 +216,7 @@ flowchart TD
 
 Fork the repositoryCreate a feature branchRun tests: `pytest src/tests/`Submit pull request with documentation updates##  License
 
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction,
 
 feel free to connect.
+https://linkedin.com/in/siddhi-rawool-783059248
+

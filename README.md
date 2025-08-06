@@ -1,5 +1,5 @@
 # 🕵️ Fraud Transaction Detection
-check at  this url
+
 https://fraudtransactiondetection-uee8kzouwxas9pc3rve5mc.streamlit.app/
 
 This is an end-to-end machine learning project to detect fraudulent financial transactions using a stacking ensemble model (Random Forest + XGBoost). It includes preprocessing, modeling, evaluation, prediction, and a user-friendly Streamlit web app.
@@ -169,28 +169,43 @@ Here are your data attributes in table format:
 pip install -r requirements.txt
 ```
 
-##  Usage
+Here's your Streamlit project architecture diagram:
 
-```python
-from fraud_transaction_detection.pipeline import PredictionPipeline
-
-# Initialize pipeline
-pipeline = PredictionPipeline()
-
-# Make predictions
-transaction_data = {
-    'amount': 1000.0,
-    'old_balance': 5000.0,
-    'new_balance': 4000.0,
-    # ... other features
-}
-fraud_score = pipeline.predict(transaction_data)
-
-# Get detailed prediction results
-results = pipeline.get_prediction_details()
-print(f"Fraud Score: {results['score']:.4f}")
-print(f"Model Confidence: {results['confidence']:.4f}")
+```mermaid
+flowchart TD
+    subgraph Client["Client Side"]
+        Browser["Web Browser"]
+    end
+    
+    subgraph Streamlit["Streamlit Application"]
+        App["Streamlit App"]
+        Model["Fraud Detection Model"]
+        Cache["Cached Data"]
+    end
+    
+    subgraph Storage["Data Storage"]
+        Pickle["Pickle Files"]
+        Data["Transaction Data"]
+    end
+    
+    Browser -->|"HTTP Request"| App
+    App -->|"Load Model"| Model
+    Model -->|"Request Data"| Cache
+    Cache -->|"If Not Found"| Pickle
+    Pickle -->|"Load Data"| Data
+    Data -->|"Cache"| Cache
+    Model -->|"Predictions"| App
+    App -->|"Results"| Browser
+    
+    classDef client fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#000000
+    classDef app fill:#e1f5fe,stroke:#333,stroke-width:2px,color:#000000
+    classDef storage fill:#fff3e0,stroke:#333,stroke-width:2px,color:#000000
+    
+    class Browser client
+    class App,Model,Cache app
+    class Pickle,Data storage
 ```
+
 
 
 ##  Contributing
@@ -201,3 +216,4 @@ MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction,
 
+feel free to connect.

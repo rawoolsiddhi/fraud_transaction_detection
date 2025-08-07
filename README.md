@@ -214,10 +214,11 @@ flowchart TD
 
 ##  Contributing
 
-Fork the repositoryCreate a feature branchRun tests: `pytest src/tests/`Submit pull request with documentation updates##  License
+Fork the repositoryCreate a feature branchRun tests: `pytest src/tests/`Submit pull request with documentation updates##  
 
 
 feel free to connect.
 https://linkedin.com/in/siddhi-rawool-783059248
+
 
 
